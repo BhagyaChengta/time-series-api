@@ -4,7 +4,7 @@ from enum import Enum
 
 
 class AvailableDbConnections_Response(BaseModel):
-    result : list[str]
+    result : List[str]
 
 
 class General_Response(BaseModel):
