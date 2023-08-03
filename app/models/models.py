@@ -1,10 +1,10 @@
 from pydantic import BaseModel, HttpUrl , Field
-from typing import Union, Optional, Any, List
+from typing import Union, Optional, Any
 from enum import Enum
 
 
 class AvailableDbConnections_Response(BaseModel):
-    result : List[str]
+    result : list[str]
 
 
 class General_Response(BaseModel):
@@ -51,7 +51,7 @@ class InputTableDetails(BaseModel):
     db_schema: Optional[str] = ...
     database: str=...
     table_name: str = ...
-    column_names : List[str] = Field(..., max_items=2, min_items=2)
+    column_names : list[str] = Field(..., max_items=2, min_items=2)
 
 
 class DataIngestionInputModel(InputTableDetails):
