@@ -6,6 +6,7 @@ pandas
 statsmodels 
 matplotlib
 mysql
+mysql-connector-python
 asyncio
 typing
 sqlalchemy
