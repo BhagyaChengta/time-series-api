@@ -7,7 +7,6 @@ statsmodels
 matplotlib
 mysql
 asyncio
-json
 typing
 os
 sqlalchemy
