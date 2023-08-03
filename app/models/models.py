@@ -1,5 +1,5 @@
 from pydantic import BaseModel, HttpUrl , Field
-from typing import Union, Optional, Any
+from typing import Union, Optional, Any, List
 from enum import Enum
 
 
