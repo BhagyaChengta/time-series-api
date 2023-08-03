@@ -8,13 +8,13 @@ import logging
 
 class DbMethods(ABC):
 
-    def check_connection(self) -> tuple[bool, str]:
+    def check_connection(self) :
         ...
 
     def get_table_data(self, table: str, columns: list[str], conn):
         ...
 
-    def run_query(self, conn, query) -> list[tuple]:
+    def run_query(self, conn, query):
         ...
 
 
