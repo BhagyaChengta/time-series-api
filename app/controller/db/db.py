@@ -1,10 +1,12 @@
 import snowflake as sf
-from typing import Protocol, Union
+from typing import Union
+from abc import ABC
+
 import mysql.connector
 import logging
 
 
-class DbMethods(Protocol):
+class DbMethods(ABC):
 
     def check_connection(self) -> tuple[bool, str]:
         ...
